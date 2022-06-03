@@ -18,7 +18,9 @@ const Expenses = (props) => {
   // for filtering data with respective date
   const filteredExpenses = props.items.filter((expense) => {
     // return console.log(expenses.date.getFullYear().toString())
-    return expense.date.getFullYear().toString() === filteredYear
+    // return expense.date.getFullYear().toString() === filteredYear
+    return console.log(expense.date.toString().split(' ')[3] === filteredYear)
+    // return expense.date.toString().split(' ')[3] === filteredYear
     // return filteredDate
   })
 
